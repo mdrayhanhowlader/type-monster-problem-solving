@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <section>
+        <div class="blogs">
+            <h1>Blogs</h1>
+
+            <div class="blog">
+                <h2>Difference between local storage and session storage</h2> <br>
+                <div>
+                    <p>SessionStorage is similar to localStorage. The difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab.
+                    </p>
+
+
+                </div>
+            </div>
+            <div class="blog">
+                <h2>Difference between global scope and block scope</h2> <br>
+                <div>
+                    <p>
+                       Function Scope: When a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function. Block Scope: A variable when declared inside the if or switch conditions or inside for or while loops, are accessible within that particular condition or loop.
+                    </p>
+
+                </div>
+            </div>
+            <div class="blog">
+                <h2>How does the Event Loop works in JavaScript?</h2> <br>
+                <div>
+                    <p>
+                       JavaScript is a single-threaded language. In other words, it can do only one thing at a time. JavaScript executes all operations on a single thread, but using a few smart data structures, gives us the illusion of multi-threading.The event loop is the secret behind JavaScript's asynchronous programming. <br>
+                       JavaScript engine executes a script from the top and works its way down creating execution contexts and pushing and popping functions onto and off the call stack. <br>
+                       Javascript has a few interesting data structures that help it in appearing like a multi-threaded language. <br> <br>
+
+                        <strong>1 — Call Stack</strong>
+                       As the execution proceeds line by line, the method calls are pushed onto the call stack in order of execution. Once the execution is complete, the method is popped from the stack. 
+                       <br><br>
+                       <strong>2 — Memory Heap </strong>
+                       Objects are allocated in a heap which is just a name to denote a large (mostly unstructured) region of memory.
+                       <br><br>
+                       <strong>3 — Event/Callback Queue</strong>
+                       The event queue is responsible for sending new functions to the track for processing. It follows the queue data structure to maintain the correct sequence in which all operations should be sent for execution. <br>
+                       At some point during the event loop, the runtime starts handling the messages on the queue, starting with the oldest one. To do so, the message is removed from the queue and its corresponding function is called with the message as an input parameter. As always, calling a function creates a new stack frame for that function's use. <br>
+                       Whenever an async function is called, it is sent to a browser API. These are APIs built into the browser. Based on the command received from the call stack, the API starts its own single-threaded operation.
+                    </p>
+
+                </div>
+            </div>
+            <div class="blog">
+                <h2>How many ways can we get undefined in javascript?</h2> <br>
+                <div>
+                    <p>
+                       There are about 8 ways we can get undefined in javascript.
+                       <br>
+                        <p>
+                           1: variable that is not initialized will give undefined. <br>
+                           2: function with no return. <br>
+                           3: parameter that will not passed will be undefined. <br>
+                           4: if return nothing on the right side will return undefined. <br>
+                           5: property that doesn't exists on an object will give you undefined. <br>
+                            6: accessing array elements outside of the index range. <br>
+                            7: deleting an element inside an array. <br>
+                            8: set a value directly to undefined.
+                        </p>
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+</body>
+</html>
